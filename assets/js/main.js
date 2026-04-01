@@ -18,7 +18,7 @@ animate(chars1, {
 animate(chars2, {
   y: [
     { to: ['100%', '0%'] },
-    { to: '-100%', delay: 5000, ease: 'in(3)' }
+    { to: '-100%', delay: 4000, ease: 'in(3)' }
   ],
   duration: 900,
   ease: 'out(3)',
