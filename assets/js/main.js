@@ -13,7 +13,8 @@ animate(chars1, {
   ease: 'out(3)',
   delay: stagger(80),
   loop: true,
-});
+}
+);
 
 animate(chars2, {
   y: [
@@ -27,7 +28,19 @@ animate(chars2, {
 });
 
 /*=============== SWIPER PROJECTS ===============*/
+const swiperProjects = new Swiper('.projects__swiper', {
 
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 'auto',
+  grabCursor: true,
+  speed: 600,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+});
 
 /*=============== WORK TABS ===============*/
 
