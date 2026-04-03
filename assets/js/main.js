@@ -100,6 +100,18 @@ servicesButtons.forEach(button => {
 })
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
+//Duplicate image to make the animation work
+
+const tracks = document.querySelectorAll('.testimonials__content')
+
+tracks.forEach(tracks => {
+  const cards = [...tracks.children] // spread to make a static copy
+
+  //Duplicate cards only once
+  for (const card of cards) {
+    tracks.appendChild(card.cloneNode(true))
+  }
+})
 
 
 /*=============== COPY EMAIL IN CONTACT ===============*/
