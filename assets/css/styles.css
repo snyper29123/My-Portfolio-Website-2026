@@ -179,10 +179,30 @@ img {
 }
 
 /*=============== CUSTOM CURSOR ===============*/
-
+.cursor{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  background-color: var(--first-color-light);
+  border-radius: 50%;
+  box-shadow: 0 0 30px var(--first-color);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: transform .2s ease-out,
+              left .2 ease-out,
+              top .2s ease-out,
+              width .3s,
+              height .3s;
+}
 
 /* Hide the custom cursor */
-
+.hide-cursor{
+  width: 0;
+  height: 0;
+}
 
 /*=============== HEADER & NAV ===============*/
 .header {
@@ -236,6 +256,11 @@ img {
 } 
 
 /* Active link */
+.active-link{
+  color: var(--first-color);
+  text-shadow: 0 8px 16px var(--first-color);
+}
+
 
 
 /*=============== HOME ===============*/
@@ -956,6 +981,24 @@ img {
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(240, 6%, 12%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  
+  background-color: hsl(240, 6%, 20%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  
+  background-color: hsl(240, 6%, 24%);
+  
+}
+
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -1351,6 +1394,16 @@ img {
 
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px){
+  body{
+    zoom: 1.4;
+  }
+}
 
 
 /* Custom cursor is hidden for mobile devices */
+@media (pointer: coarse){
+  .cursor{
+    display: none;
+  }
+}
