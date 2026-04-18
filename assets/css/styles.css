@@ -354,6 +354,16 @@ img {
   transform: translateY(-1rem);
 }
 
+.home__tagline {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  max-width: 300px;
+  opacity: 0.8;
+  letter-spacing: 0.3px;
+}
+
 .home__social{
   z-index: 2;
   left: 0;
