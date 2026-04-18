@@ -356,9 +356,9 @@ img {
 
 .home__tagline {
   margin-top: 14px;
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-regular);
+  color: var(--first-color);
   max-width: 300px;
   opacity: 0.8;
   letter-spacing: 0.3px;
